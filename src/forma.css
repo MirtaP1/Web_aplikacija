@@ -1,0 +1,317 @@
+body { 
+    background-color: #4f6d7a; 
+    color:#fff; 
+} 
+  
+h1 { 
+    text-align: left; 
+    color: black; 
+} 
+
+h3 { 
+    text-align: left; 
+    color: black; 
+} 
+
+label { 
+    color: black; 
+    margin: 10px; 
+} 
+  
+form { 
+    margin-left: 20%; 
+    margin-right: 20%; 
+    background-color: #c0d6df; 
+} 
+  
+input { 
+    padding: .3rem; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    margin: 10px; 
+} 
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+.logo-title-container {
+    display: flex;
+    align-items: center;
+}
+  
+.logo {
+    width: 150px; 
+    height: auto;
+    margin-right: 10px; 
+}
+  
+.form-title {
+    font-size: 25px; 
+}
+
+.required {
+    color: red;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.form-title-small {
+    font-size: 15px; 
+    color: rgb(0, 0, 0);
+}
+
+.example {
+    color: black;
+    font-size: 13px;
+    display: block;
+    padding-left: 2%;
+}
+
+
+p { 
+    text-align: left; 
+    color: black; 
+    padding-left: 1%;
+} 
+
+.ime-datoteke {
+    color: black;
+}
+
+input[type="file"] {
+    color: black;
+    border: none;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.submit-button {
+    font-size: 100%;
+}
+
+.language-selection {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+
+.flag {
+    width: 35px;
+    height: auto;
+    cursor: pointer;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+.flag.active {
+    border: 2px solid orange;
+}
+
+.flag:hover {
+    border: 2px solid gray;
+}
+
+.label-text-2 {
+    display: block;
+}
+
+.info-button {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+.info-button button {
+    font-size: 18px; 
+}
+
+.popup {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #c0d6df;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%; 
+}
+  
+.info-text {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 1.4;
+}
+  
+.popup button {
+    background-color: #dd6e42;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+  
+.popup button:hover {
+    background-color: #c46039;
+}
+
+.button-upload {
+    font-size: 12px;
+}
+
+.error-message {
+    color: red;
+}
+
+.helper-input {
+    height: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0.1rem;
+    opacity: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    form {
+        margin-left: 3%;
+        margin-right: 3%; 
+    }
+
+    .logo {
+        width: 100px; 
+        margin-bottom: 10px;
+    }
+
+    .form-title {
+        font-size: 20px; 
+        text-align: center;
+        padding-left: 1%;
+        padding-right: 1%
+    }
+
+    .logo-title-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+    
+    .language-selection {
+        top: 2%;
+        right: 4%;
+    }
+    .select-text {
+        margin: 10px;
+    }
+
+    .label-text {
+        display: block;
+    }
+
+    input { 
+        padding: .1rem; 
+    }
+
+    textarea {
+        margin-right: 5px;
+    }
+
+    .info-button {
+        top: 2%;
+        left: 5%;
+    }
+      
+    .info-text {
+        font-size: 15px;
+    }
+
+    .popup {
+        width: 70%; 
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+      
+    .popup button {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .label-text {
+        display: block;
+    }
+
+    .language-selection {
+        top: 2%;
+        right: 4%;
+    }
+    .select-text {
+        margin: 10px;
+    }
+
+    input { 
+        padding: .1rem; 
+        border: 1px solid #ccc; 
+        border-radius: 4px; 
+        margin: 10px; 
+    } 
+    
+    textarea {
+        margin-right: 5px;
+    }
+
+    .popup {
+        width: 60%; 
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .form-title {
+        font-size: 15px; 
+        text-align: center;
+        padding-left: 1%;
+        padding-right: 1%
+    }
+
+    .flag {
+        width: 25px;
+        height: auto;
+        cursor: pointer;
+        margin-right: 5px;
+        padding: 5px;
+    }
+
+    .info-button {
+        top: 2%;
+        left: 5%;
+    }
+      
+    .info-text {
+        font-size: 12px;
+    }
+
+    .popup {
+        width: 70%; 
+    }
+      
+    .popup button {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+}
