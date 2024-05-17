@@ -454,7 +454,7 @@ function MyForm() {
               id="helper"
               className="helper-input"
               required 
-              onInvalid={(e) => e.target.setCustomValidity('Molimo unesite model uređaja.')}
+              onInvalid={(e) => e.target.setCustomValidity('Molimo unesite vrstu uređaja.')}
               />
           </div>
           {deviceType === "Web" && ( 
@@ -677,7 +677,7 @@ function MyForm() {
             id="helper"
             className="helper-input"
             required 
-            onInvalid={(e) => e.target.setCustomValidity('Please enter the device model.')}
+            onInvalid={(e) => e.target.setCustomValidity('Please enter the device type.')}
             />
         </div>
         {deviceType === "Web" && ( 
@@ -732,9 +732,9 @@ function MyForm() {
       {showPopup && (
         <div className="popup">
           {language === "hr" ? (
-          <p className="info-text">Web aplikacije je razvijena u okviru završnog rada: <br />Mirta Petrović, Web-aplikacija za praćenje korisničkih prijava neispravnosti temeljena na tehnologiji React. <br />Sveučilište u Zagrebu Fakultet elektrotehnike i računarstva, ak.godina 2023/2024. <br />Mentorica: prof. dr. sc. Željka Car <br />Asistentica: dr. sc. Matea Žilak</p>
+          <p className="info-text">Web-aplikacija je razvijena u okviru završnog rada: <br />Mirta Petrović, „Web-aplikacija za praćenje korisničkih prijava neispravnosti temeljena na tehnologiji React.” <br />Sveučilište u Zagrebu Fakultet elektrotehnike i računarstva, ak.godina 2023./2024. <br />Mentorica: prof. dr. sc. Željka Car <br />Neposredna voditeljica: dr. sc. Matea Žilak</p>
           ) : (
-          <p className="info-text">The web application was developed as part of the bachelor's degree: <br />Mirta Petrović, A web application for tracking user-detected failures based on React technology. <br />University of Zagreb Faculty of Electrical Engineering and Computing, academic year 2023/2024. <br />Mentor: Prof. Željka Car, Ph.D. <br />Assistant: Matea Žilak, Ph.D.</p>
+          <p className="info-text">The web application was developed as part of the bachelor's degree: <br />Mirta Petrović, "A web application for tracking user-detected failures based on React technology." <br />University of Zagreb Faculty of Electrical Engineering and Computing, academic year 2023./2024. <br />Mentor: Prof. Željka Car, Ph.D. <br />Direct manager: Matea Žilak, Ph.D.</p>
           )}
           <button onClick={handleClosePopup}>{language === "hr" ? "Zatvori" : "Close"}</button>
         </div>
