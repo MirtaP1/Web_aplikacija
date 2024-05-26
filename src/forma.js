@@ -31,7 +31,7 @@ function MyForm() {
       validEmail: "Unesite valjanu e-mail adresu.",
       networkError: "Došlo je do pogreške prilikom slanja podataka na server.",
       success: "Podaci uspješno poslani na server.",
-      invalidFile: "Nedopuštena datoteka: {fileName}. Molimo odaberite datoteke s ekstenzijama: jpg, jpeg, png, gif, mp4, avi, mov, wmv.",
+      invalidFile: "Nedopuštena datoteka: {fileName}. Molimo odaberite datoteke s ekstenzijama: jpg, jpeg, png, bmp, mp4.",
       oversizedVideo: "Veličina videa {fileName} prelazi maksimalno dopuštenih {maxVideoSize} MB.",
       maxFilesExceeded: "Možete odabrati maksimalno 5 datoteka."
     },
@@ -39,7 +39,7 @@ function MyForm() {
       validEmail: "Enter a valid email address.",
       networkError: "There was an error sending the data to the server.",
       success: "Data successfully sent to the server.",
-      invalidFile: "Invalid file: {fileName}. Please choose files with extensions: jpg, jpeg, png, gif, mp4, avi, mov, wmv.",
+      invalidFile: "Invalid file: {fileName}. Please choose files with extensions: jpg, jpeg, png, bmp, mp4.",
       oversizedVideo: "The size of the video {fileName} exceeds the maximum allowed {maxVideoSize} MB.",
       maxFilesExceeded: "You can select a maximum of 5 files."
     }
@@ -173,7 +173,7 @@ function MyForm() {
       const file = filesArray[i];
       const extension = file.name.split('.').pop().toLowerCase(); 
         
-      const allowedExtensions = ['jpg', 'jpeg', 'png', 'gif', 'bmp', 'mp4', 'avi', 'mov', 'wmv'];
+      const allowedExtensions = ['jpg', 'jpeg', 'png', 'bmp', 'mp4'];
         
       if (!allowedExtensions.includes(extension)) {
         showError(alerts[language].invalidFile.replace("{fileName}", file.name));
